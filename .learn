@@ -1,5 +1,11 @@
 tags:
-  - tag1
+  - methods
+  - arrays
+  - reading array
+  - method arguments
+  - puts
+  - tdd
+  - writing tests
 languages:
   - language1
 resources: 0
