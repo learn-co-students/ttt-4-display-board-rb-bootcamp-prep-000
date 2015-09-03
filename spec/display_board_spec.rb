@@ -1,16 +1,3 @@
-require 'pry'
-
-def capture_puts
-  begin
-    old_stdout = $stdout
-    $stdout = StringIO.new('','w')
-    yield
-    $stdout.string
-  ensure
-    $stdout = old_stdout
-  end
-end
-
 require_relative"../lib/display_board.rb"
 
 describe "#display_board in 'lib/display_board.rb" do
