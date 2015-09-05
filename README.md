@@ -97,7 +97,7 @@ Should print:
 
 The board follows the following format:
 
-1. Three characters per cell. An empty cell is `"   "` and a filled cell is `" X "`
+1. Three characters per cell. An empty cell is <code>"&nbsp;&nbsp;&nbsp;"</code> and a filled cell is `" X "`
 2. Three cells per a row.
 3. The middle cell in a row is bordered by 2 `|` (pipes): ` O | X |   `
 4. Three rows on the board.
