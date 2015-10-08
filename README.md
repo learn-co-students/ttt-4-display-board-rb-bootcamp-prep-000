@@ -1,13 +1,8 @@
----
-tags: 
-languages: 
-resources: 
----
 # Displaying a Tic Tac Toe Board
 
 ## Overview
 
-A tic tac toe board can be represented by an array of 9 string elements containing the state of that cell in the board. 
+A tic tac toe board can be represented by an array of 9 string elements containing the state of that cell in the board.
 
 An empty board would be:
 ```ruby
@@ -20,7 +15,7 @@ Representing:
    |   |   
 -----------
    |   |   
-``` 
+```
 
 A board with an "X" in the middle:
 ```ruby
@@ -33,7 +28,7 @@ Representing:
    | X |   
 -----------
    |   |   
-``` 
+```
 
 
 A board with X winning via filling the top row:
@@ -42,12 +37,12 @@ board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 ```
 Representing:
 ```
- X | X | X 
+ X | X | X
 -----------
    |   |   
 -----------
    |   |   
-``` 
+```
 
 A random board after 5 turns:
 ```ruby
@@ -68,11 +63,11 @@ board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
 ```
 Representing:
 ```
- O | O | O 
+ O | O | O
 -----------
- O | O | O 
+ O | O | O
 -----------
- O | O | O 
+ O | O | O
 ```   
 
 Etc...
@@ -84,7 +79,7 @@ For example, given a correctly defined `display_board`:
 ```ruby
 board = ["O", "X", " ", " ", "X", " ", "X", "O", " "]
 display_board(board)
-``` 
+```
 
 Should print:
 ```
