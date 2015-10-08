@@ -270,7 +270,7 @@ rspec ./spec/display_board_spec.rb:8 # #display_board in 'lib/display_board.rb v
 
 ```
 
-*Remember: `rspec` is just like running `learn` but you won't get credit for a passing test.*
+*Remember:* `rspec` *is just like running* `learn` *but you won't get credit for a passing test.*
 
 ## Bonus: Write Your Own Tests!
 
