@@ -111,16 +111,15 @@ The board follows the following format:
 2. Get the test suite passing by running `learn`
 3. Submit your solution.
 
-## Hint: The `--fail-fast` test flag
+## Hint: The `learn --fail-fast` test flag
 
-To ensure that your `display_board` method honestly works as expected, we had to write a lot of tests to flex the different situations that might occur. When you run `learn` or `rspec`, you're going to see lots of failing tests that are all basically failing for the same reason - `display_board` isn't behaving as desired. It might be easier to deal with one test failure at a time and scrolling through the output of 12 failures isn't helpful.
+To ensure that your `display_board` method honestly works as expected, we had to write a lot of tests to flex the different situations that might occur. When you run `learn`, you're going to see lots of failing tests that are all basically failing for the same reason - `display_board` isn't behaving as desired. It might be easier to deal with one test failure at a time and scrolling through the output of 12 failures isn't helpful.
 
 You can limit your test run to stop at the first failure it encounters so that you only see 1 failure and can easily focus on it. By focusing on a single failure, you can quickly change your method based on that failure and re-run the test suite and see if the change solved that single failure. It's helpful, for example:
 
-`rspec`
 ```
 [23:19:40] (master) ttt-4-display_board
-// ♥ rspec
+// ♥ learn
 
 #display_board in 'lib/display_board.rb
   accepts a board as an argument
@@ -241,7 +240,7 @@ rspec ./spec/display_board_spec.rb:109 # #display_board in 'lib/display_board.rb
 
 VS:
 
-`rspec --fail-fast`
+`learn --fail-fast`
 ```
 [23:24:16] (master) ttt-4-display_board
 // ♥ rspec --fail-fast
@@ -269,8 +268,6 @@ Failed examples:
 rspec ./spec/display_board_spec.rb:8 # #display_board in 'lib/display_board.rb various game situations prints a blank board when the board array is empty
 
 ```
-
-*Remember:* `rspec` *is just like running* `learn` *but you won't get credit for a passing test.*
 
 ## Bonus: Write Your Own Tests!
 
