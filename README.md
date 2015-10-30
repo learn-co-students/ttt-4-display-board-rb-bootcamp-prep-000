@@ -115,7 +115,7 @@ The board follows the following format:
 
 To ensure that your `display_board` method honestly works as expected, we had to write a lot of tests to flex the different situations that might occur. When you run `learn`, you're going to see lots of failing tests that are all basically failing for the same reason - `display_board` isn't behaving as desired. It might be easier to deal with one test failure at a time and scrolling through the output of 12 failures isn't helpful.
 
-You can limit your test run to stop at the first failure it encounters so that you only see 1 failure and can easily focus on it. By focusing on a single failure, you can quickly change your method based on that failure and re-run the test suite and see if the change solved that single failure. Although this lenghtens the command each time, you can instantly redo your last entered command by tapping the Up arrow on your keyboard so you don't have to type the whole thing each time.
+You can limit your test run to stop at the first failure it encounters so that you only see 1 failure and can easily focus on it. By focusing on a single failure, you can quickly change your method based on that failure and re-run the test suite and see if the change solved that single failure. Although this lengthens the command each time, you can instantly redo your last entered command by tapping the Up arrow on your keyboard so you don't have to type the whole thing each time.
 
 It's helpful, for example:
 
