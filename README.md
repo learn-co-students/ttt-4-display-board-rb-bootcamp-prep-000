@@ -243,7 +243,7 @@ VS:
 `learn --fail-fast`
 ```
 [23:24:16] (master) ttt-4-display_board
-// ♥ rspec --fail-fast
+// ♥ learn --fail-fast
 
 #display_board in 'lib/display_board.rb
   accepts a board as an argument
