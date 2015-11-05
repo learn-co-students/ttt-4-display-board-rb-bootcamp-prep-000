@@ -1,9 +1,6 @@
 require_relative"../lib/display_board.rb"
 
 describe "#display_board in 'lib/display_board.rb" do
-  it 'accepts a board as an argument' do
-  end
-
   context 'various game situations' do
     it 'prints a blank board when the board array is empty' do
       board = [" "," "," "," "," "," "," "," "," "]
