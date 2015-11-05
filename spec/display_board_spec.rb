@@ -1,9 +1,6 @@
 require_relative"../lib/display_board.rb"
 
 describe "#display_board in 'lib/display_board.rb" do
-  it 'accepts a board as an argument' do
-  end
-
   context 'various game situations' do
     it 'prints a blank board when the board array is empty' do
       board = [" "," "," "," "," "," "," "," "," "]
@@ -174,7 +171,6 @@ describe "#display_board in 'lib/display_board.rb" do
       # Hint: You should be able to copy the code in the previous it example
       # and make a few simple edits to convert the previous example to this
       # example's situation.
-      # Don't forget to comment out the line that begins with `skip`.
 
       # *** Comment the line below by adding a # at the line start ***
       expect(true).to be(true)
