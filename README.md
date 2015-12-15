@@ -5,37 +5,47 @@
 A tic tac toe board can be represented by an array of 9 string elements containing the state of that cell in the board.
 
 An empty board would be:
+
 ```ruby
 board = [" "," "," "," "," "," "," "," "," "]
 ```
-Representing:
-```
-   |   |   
------------
-   |   |   
------------
-   |   |   
+
+If we called `display_board` and passed in that `board` as an argument, we'd expect the following:
+
+```ruby
+board = [" "," "," "," "," "," "," "," "," "]
+display_board(board)
+
+# Would Print:
+#    |   |   
+# -----------
+#    |   |   
+# -----------
+#    |   |   
 ```
 
 A board with an "X" in the middle:
+
 ```ruby
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-```
-Representing:
-```
-   |   |   
------------
-   | X |   
------------
-   |   |   
+display_board(board)
+
+# Would Print:
+#    |   |   
+# -----------
+#    | X |   
+# -----------
+#    |   |   
 ```
 
+In these examples, the data from `board` is being used within the `display_board` method to print a board based on the current values in the `board` array passed to it as an argument. Here are a few more examples.
 
 A board with X winning via filling the top row:
 ```ruby
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 ```
-Representing:
+If that `board` was passed to `display_board`, we'd expect this to print:
+
 ```
  X | X | X
 -----------
@@ -44,11 +54,14 @@ Representing:
    |   |   
 ```
 
-A random board after 5 turns:
+Or think about a random board after 5 turns:
+
 ```ruby
 board = ["O", "X", " ", " ", "X", " ", "X", "O", " "]
 ```
-Representing:
+
+That `board` as an argument to `display_board` should print:
+
 ```
  O | X |   
 -----------
@@ -57,11 +70,11 @@ Representing:
  X | O |   
 ```   
 
-A board entirely filled with "O":
+Or a board entirely filled with "O":
 ```ruby
 board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
 ```
-Representing:
+Would print:
 ```
  O | O | O
 -----------
@@ -97,6 +110,33 @@ The board follows the following format:
 3. The middle cell in a row is bordered by 2 `|` (pipes): ` O | X |   `
 4. Three rows on the board.
 5. Rows are separated by: `-----------`
+
+### Building Dynamic Strings with Interpolation
+
+Don't forget that in Ruby you can interpolate data into a string using the `"#{1+1}"` interpolation syntax. For example:
+
+```ruby
+puts "#{1+1}" #> "2" will print because ruby evaluates the code within the {}
+puts "1+1" #> "1+1" will print because ruby treats "1+1" as a string.
+```
+
+With variables, interpolation looks like:
+
+```ruby
+x = 1+1
+puts "#{x}" #> "2" will print because ruby evaluates the code within the {}
+puts "x" #> "x" will print because ruby treats "x" as a string not a variable.
+```
+
+In the context of an array, like you'll be dealing with in `board`, you'll have to do something like:
+
+```ruby
+colors = ["Red","Yellow", "Green"]
+puts "The first color is #{colors[0]}"
+#> "The first color is Red" will print because ruby evaluates colors[0]
+```
+
+Make sure to be interpolating data from the `board` array within your `display_board` method. This is essential to solving this lab, to evolve from a permanently empty skeleton board as you did before to an _actual_ board that contains live player movement throughout the game.
 
 ## Objectives
 
@@ -274,3 +314,5 @@ rspec ./spec/display_board_spec.rb:8 # #display_board in 'lib/display_board.rb v
 ## Bonus: Write Your Own Tests!
 
 If you open `spec/display_board_spec.rb` in Sublime you'll see the test suite for this lesson. We left the last two tests pending. Read the instructions in the file and see if you can implement those tests.
+
+<a href='https://learn.co/lessons/ttt-4-display-board-rb' data-visibility='hidden'>View this lesson on Learn.co</a>
