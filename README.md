@@ -136,7 +136,7 @@ puts "The first color is #{colors[0]}"
 #> "The first color is Red" will print because ruby evaluates colors[0]
 ```
 
-Make sure to be interpolating data from the `board` array within your `display_board` method.
+Make sure to be interpolating data from the `board` array within your `display_board` method. This is essential to solving this lab, to evolve from a permanently empty skeleton board as you did before to an _actual_ board that contains live player movement throughout the game.
 
 ## Objectives
 
