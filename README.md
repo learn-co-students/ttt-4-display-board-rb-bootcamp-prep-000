@@ -111,6 +111,8 @@ The board follows the following format:
 4. Three rows on the board.
 5. Rows are separated by: `-----------`
 
+> Note: If you've built the blank tic tac toe board in a previous lab, you may want to go back and copy it in to this lab. Feel free to also re-create the board from scratch. 
+
 ### Building Dynamic Strings with Interpolation
 
 Don't forget that in Ruby you can interpolate data into a string using the `"#{1+1}"` interpolation syntax. For example:
