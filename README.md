@@ -153,7 +153,7 @@ Make sure to be interpolating data from the `board` array within your `display_b
 2. Get the test suite passing by running `learn`
 3. Submit your solution.
 
-## Hint: The `learn --fail-fast` test flag
+## Hint: The `rspec --fail-fast` test flag
 
 To ensure that your `display_board` method honestly works as expected, we had to write a lot of tests to flex the different situations that might occur. When you run `learn`, you're going to see lots of failing tests that are all basically failing for the same reason - `display_board` isn't behaving as desired. It might be easier to deal with one test failure at a time and scrolling through the output of 12 failures isn't helpful.
 
@@ -284,10 +284,10 @@ rspec ./spec/display_board_spec.rb:109 # #display_board in 'lib/display_board.rb
 
 VS:
 
-`learn --fail-fast`
+`rspec --fail-fast`
 ```
 [23:24:16] (master) ttt-4-display_board
-// ♥ learn --fail-fast
+// ♥ rspec --fail-fast
 
 #display_board in 'lib/display_board.rb
   accepts a board as an argument
@@ -318,3 +318,5 @@ rspec ./spec/display_board_spec.rb:8 # #display_board in 'lib/display_board.rb v
 If you open `spec/display_board_spec.rb` in Sublime you'll see the test suite for this lesson. We left the last two tests pending. Read the instructions in the file and see if you can implement those tests.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-4-display-board-rb' title='Displaying a Tic Tac Toe Board'>Displaying a Tic Tac Toe Board</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-4-display-board-rb'>Display Tic Tac Toe Board</a> on Learn.co and start learning to code for free.</p>
