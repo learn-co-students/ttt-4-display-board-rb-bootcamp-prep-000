@@ -315,8 +315,7 @@ rspec ./spec/display_board_spec.rb:8 # #display_board in 'lib/display_board.rb v
 
 ## Bonus: Write Your Own Tests!
 
-If you open `spec/display_board_spec.rb` in Sublime you'll see the test suite for this lesson. We left the last two tests pending. Read the instructions in the file and see if you can implement those tests.
+If you open `spec/display_board_spec.rb` you'll see the test suite for this lesson. We left the last two tests pending. Read the instructions in the file and see if you can implement those tests.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-4-display-board-rb' title='Displaying a Tic Tac Toe Board'>Displaying a Tic Tac Toe Board</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-4-display-board-rb'>Display Tic Tac Toe Board</a> on Learn.co and start learning to code for free.</p>
