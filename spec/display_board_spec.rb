@@ -147,8 +147,9 @@ describe "#display_board in 'lib/display_board.rb" do
       # *** Edit the line below ***
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] # This is not correct
 
-      # Don't touch the following line.
+      # Don't touch the following lines.
       output = capture_puts{ display_board(board) } if defined?(display_board)
+      rows = output.split("\n")
 
       # Each line that starts with expect represents a row in the ouput.
       # The desired characters a row must include are provided by the String
