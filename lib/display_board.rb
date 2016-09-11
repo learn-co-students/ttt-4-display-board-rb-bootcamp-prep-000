@@ -5,7 +5,8 @@ def display_board(board)
   row_separator = "-" * 11
 
   board.each.with_index {
-    |cell, index| print  " #{cell} ", ((index + 1) % 3) == 0  ? "\n#{row_separator}\n" :
+    |cell, index| print  " #{cell} ", ((index + 1) % 3) == 0 &&
+    index < board.length - 1 ? "\n#{row_separator}\n" :
     index < board.length - 1 ? "#{cell_separator}" : "\n"
   }
 end
