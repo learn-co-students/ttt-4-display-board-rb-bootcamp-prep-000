@@ -17,7 +17,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with an X in the center position' do
       board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-
+      board[4] = "X"
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
@@ -61,7 +61,9 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with X winning via the top row' do
       board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-
+      board[0] = "X"
+      board[1] = "X"
+      board[2] = "X"
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
@@ -74,7 +76,9 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with O winning via the bottom row' do
       board = [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
-
+      board[6] = "O"
+      board[7] = "O"
+      board[8] = "O"
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
@@ -87,7 +91,9 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with X winning in a top left to bottom right diagonal' do
       board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-
+      board[0] = "X"
+      board[4] = "X"
+      board[8] = "X"
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
