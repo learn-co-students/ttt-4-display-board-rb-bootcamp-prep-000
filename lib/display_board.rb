@@ -13,8 +13,8 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 
 def display_board(board)
-  row = [" #{board[0]} | #{board[1]} | #{board[2] } ", "-----------", " #{board[3]} | #{board[4]} | #{board[5] } ", "-----------", " #{board[6]} | #{board[7]} | #{board[8] } "]
-  puts row
+  rows = [" #{board[0]} | #{board[1]} | #{board[2] } ", "-----------", " #{board[3]} | #{board[4]} | #{board[5] } ", "-----------", " #{board[6]} | #{board[7]} | #{board[8] } "]
+  puts rows
 end
 display_board(board)
 
@@ -25,10 +25,10 @@ display_board(board)
 
 ### last lessson:
 
-colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
-
-def display_rainbow(colors)
-  puts "R: #{colors[0]}, O: #{colors[1]}, Y: #{colors[2]}, G: #{colors[3]}, B: #{colors[4]}, I: #{colors[5]}, V: #{colors[6]}"
-end
-
-display_rainbow(colors)
+# colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+#
+# def display_rainbow(colors)
+#   puts "R: #{colors[0]}, O: #{colors[1]}, Y: #{colors[2]}, G: #{colors[3]}, B: #{colors[4]}, I: #{colors[5]}, V: #{colors[6]}"
+# end
+#
+# display_rainbow(colors)
