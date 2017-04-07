@@ -145,9 +145,9 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # Define the board with values that should create the desired output
       # *** Edit the line below ***
-      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] # This is not correct
+      board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"] # This is not correct
 
-      # Don't touch the following lines.
+      # Don't touch the following line.
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
 
@@ -165,14 +165,15 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
-      # expect(rows[0]).to eq("   |   |   ")
-      # expect(rows[1]).to eq("-----------")
-      # expect(rows[2]).to eq("   |   |   ")
-      # expect(rows[3]).to eq("-----------")
-      # expect(rows[4]).to eq("   |   |   ")
+
+      expect(rows[0]).to eq(" X | X | X ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" X | X | X ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" X | X | X ")
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      # expect(true).to be(true)
     end
 
     it 'prints an entire board full of Os' do
@@ -183,8 +184,19 @@ describe "#display_board in 'lib/display_board.rb" do
       # and make a few simple edits to convert the previous example to this
       # example's situation.
 
+      board = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
+
+      output = capture_puts{ display_board(board) } if defined?(display_board)
+      rows = output.split("\n")
+
+      expect(rows[0]).to eq(" 0 | 0 | 0 ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" 0 | 0 | 0 ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" 0 | 0 | 0 ")
+
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      # expect(true).to be(true)
     end
   end
 end
