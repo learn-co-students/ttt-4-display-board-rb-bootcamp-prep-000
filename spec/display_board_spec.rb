@@ -145,7 +145,17 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # Define the board with values that should create the desired output
       # *** Edit the line below ***
-      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] # This is not correct
+      board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+      output = capture_puts{ display_board(board) }
+      rows = output.split("\n")
+
+      expect(rows[0]).to eq(" X | X | X ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" X | X | X ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" X | X | X ")
+    #end
+
 
       # Don't touch the following lines.
       output = capture_puts{ display_board(board) } if defined?(display_board)
@@ -172,7 +182,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # expect(rows[4]).to eq("   |   |   ")
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      #expect(true).to be(true)
     end
 
     it 'prints an entire board full of Os' do
@@ -184,7 +194,16 @@ describe "#display_board in 'lib/display_board.rb" do
       # example's situation.
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      #expect(true).to be(true)
+      board = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
+      output = capture_puts{ display_board(board) }
+      rows = output.split("\n")
+
+      expect(rows[0]).to eq(" 0 | 0 | 0 ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" 0 | 0 | 0 ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" 0 | 0 | 0 ")
     end
   end
 end
