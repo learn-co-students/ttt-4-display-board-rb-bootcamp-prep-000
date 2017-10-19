@@ -1,20 +1,22 @@
-def divider
-  "-----------\n"
-end
-
-def box
-  "   |   |   \n"
+def horizontal_divider
+  "\n-----------\n"
 end
 
 def display_board(board)
-  box_postions_for_O_or_X = [1, 5, 9, 13, 17, 21, 25, 29, 33]
-  str = box + box + box
-  box_postions_for_O_or_X.each_with_index do |val, ind|
-    if ((board[ind] != " ") & (board[ind] != ""))
-      str[val] = board[ind]
+  str = ""
+  board.each_with_index do |val, index|
+    is_third_row = (index + 1) % 3 == 0
+    is_last_value = (index + 1) == board.length
+    if (is_third_row & !is_last_value)
+      str += " #{val} #{horizontal_divider}"
+    elsif is_last_value
+      str += " #{val} "
+    else
+      str += " #{val} |"
     end
   end
-  str[11] = "\n#{divider}"
-  str[35] = "\n#{divider}"
   puts str
 end
+
+board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+display_board(board)
