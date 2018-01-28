@@ -13,11 +13,7 @@ def display_board(board = initializeVal)
   for i in 0..numOfRows do
     for j in 0..numOfCols do
       dispLocation(i*3 + j)
-      if j < numOfRows
-        print $colDivider
-      else
-        puts ""
-      end
+      j < numOfRows ? (print $colDivider) : (puts "")
     end
     if i < numOfCols
       puts $rowDivider
