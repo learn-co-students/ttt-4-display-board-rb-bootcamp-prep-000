@@ -1,10 +1,10 @@
 # Define display_board that accepts a board and prints
 # out the current state.
 
-def display_board(game)
-  print "#{game[0]} | #{game[1]} | #{game[2]}"
-  print "-----------"
-  print "#{game[3]} | #{game[4]} | #{game[5]}"
-  print "-----------"
-  print "#{game[6]} | #{game[7]} | #{game[8]}"
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
