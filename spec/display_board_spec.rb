@@ -165,11 +165,11 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
-      # expect(rows[0]).to eq("   |   |   ")
-      # expect(rows[1]).to eq("-----------")
-      # expect(rows[2]).to eq("   |   |   ")
-      # expect(rows[3]).to eq("-----------")
-      # expect(rows[4]).to eq("   |   |   ")
+       expect(rows[0]).to eq("   |   |   ")
+       expect(rows[1]).to eq("-----------")
+       expect(rows[2]).to eq("   |   |   ")
+       expect(rows[3]).to eq("-----------")
+       expect(rows[4]).to eq("   |   |   ")
 
       # *** Comment the line below by adding a # at the line start ***
       expect(true).to be(true)
