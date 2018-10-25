@@ -12,10 +12,11 @@ def display_row(board, row_number)
 end
 
 def display_board(board)
-  let separator = "-----------"
-  display_row(0)
+  separator = "-----------"
+  
+  display_row(board, 0)
   puts(separator)
-  display_row(1)
+  display_row(board, 1)
   puts(separator)
-  display_row(2)
+  display_row(board, 2)
 end
