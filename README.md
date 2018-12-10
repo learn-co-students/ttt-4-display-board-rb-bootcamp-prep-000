@@ -147,6 +147,9 @@ Make sure to be interpolating data from the `board` array within your `display_b
 3. Read data from an array.
 4. Print out a multi-line dynamic string using Interpolation
 
+**Note:** Keep in mind the key difference between this lab and the last lab is the __kind__ of board you'll be displaying. Previously, you built a static board that is hardcoded to be empty every time. In practice, we'll need a board that actually updates, displaying a live, dynamic represenation of who moved in what spot. 
+Feel free to reuse the same board from earlier as a starter skeleton, but you'll be making a very important change to it to allow it display this live data on a turn-by-turn basis.
+
 ## Instructions
 
 1. Define your `display_board` method in `lib/display_board.rb`
