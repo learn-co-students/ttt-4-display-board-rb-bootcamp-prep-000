@@ -145,7 +145,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # Define the board with values that should create the desired output
       # *** Edit the line below ***
-      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] # This is not correct
+      board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"] # This is not correct
 
       # Don't touch the following lines.
       output = capture_puts{ display_board(board) } if defined?(display_board)
@@ -158,7 +158,11 @@ describe "#display_board in 'lib/display_board.rb" do
       # You would code that expectation with:
       # expect(output).to include(" X | X | X ")
       # meaning you expect the entire output to at least include a matching row.
-
+      expect(rows[0]).to include(" X | X | X ")
+      expect(rows[1]).to include ("-----------")
+      expect(rows[2]).to include (" X | X | X ")
+      expect(rows[3]).to include ("-----------")
+      expect(rows[4]).to include (" X | X | X ")
       # Uncomment the following lines of code by removing the # at line start.
       # Then edit the following lines to represent a board entirely filled with X.
       # Remember, every space and every character is important.
@@ -172,19 +176,29 @@ describe "#display_board in 'lib/display_board.rb" do
       # expect(rows[4]).to eq("   |   |   ")
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+       # expect(true).to be(true)
     end
 
     it 'prints an entire board full of Os' do
-      # Can you copy the syntax of the tests above to write a test for a board
-      # entirely filled with Os?
+      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"] # This is not correct
 
-      # Hint: You should be able to copy the code in the previous it example
-      # and make a few simple edits to convert the previous example to this
-      # example's situation.
+      # Don't touch the following lines.
+      output = capture_puts{ display_board(board) } if defined?(display_board)
+      rows = output.split("\n")
 
-      # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      # Each line that starts with expect represents a row in the ouput.
+      # The desired characters a row must include are provided by the String
+      # of the row. EX: The top row filled with X would be " X | X | X "
+
+      # You would code that expectation with:
+      # expect(output).to include(" X | X | X ")
+      # meaning you expect the entire output to at least include a matching row.
+      expect(rows[0]).to include (" O | O | O ")
+      expect(rows[1]).to include ("-----------")
+      expect(rows[2]).to include (" O | O | O ")
+      expect(rows[3]).to include ("-----------")
+      expect(rows[4]).to include (" O | O | O ")
+      # expect(true).to be(true)
     end
   end
 end
